@@ -97,7 +97,7 @@ const Header = () => {
       </div>
 
       {/* Enhanced scroll indicator */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center gap-1 sm:gap-2">
           <span className="text-xs text-blue-200 font-medium hidden sm:block">Défiler pour découvrir</span>
           <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/30 rounded-full flex justify-center relative overflow-hidden">
@@ -105,7 +105,7 @@ const Header = () => {
           </div>
           <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-white/60 animate-bounce" />
         </div>
-      </div>
+      </div> */}
     </header>
   );
 };
