@@ -20,61 +20,63 @@ const Header = () => {
         <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           <div className="animate-fade-in">
             {/* Enhanced name with better typography */}
-            <div className="mb-6">
-              <h1 className="text-6xl md:text-8xl font-black mb-2 bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent tracking-tight">
+            <div className="mb-6 sm:mb-8">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-4 bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent tracking-tight leading-tight">
                 Mansour Pouye
               </h1>
-              <div className="h-1 w-32 bg-gradient-to-r from-blue-400 to-indigo-500 mx-auto rounded-full"></div>
+              <div className="h-1 w-24 sm:w-32 bg-gradient-to-r from-blue-400 to-indigo-500 mx-auto rounded-full"></div>
             </div>
             
-            <h2 className="text-2xl md:text-4xl font-light mb-8 text-blue-100 tracking-wide">
+            <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-light mb-6 sm:mb-8 text-blue-100 tracking-wide px-4">
               Développeur Full-Stack & Ingénieur des Systèmes d'Information
             </h2>
             
-            <p className="text-lg md:text-xl text-blue-100/90 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-xl text-blue-100/90 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-4">
               Passionné par le développement web avec <span className="font-semibold text-white">2 ans d'expérience</span>. 
               Spécialisé en <span className="text-blue-200 font-medium">React.js, Laravel, Node.js et Angular.js</span> avec une expertise en TDD.
             </p>
           </div>
 
           {/* Enhanced contact info with glass morphism */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-slide-in-left">
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-2xl hover:bg-white/15 transition-all duration-300 shadow-lg">
-              <Mail className="w-5 h-5 text-blue-300" />
-              <span className="text-sm font-medium">mansourpouye36@gmail.com</span>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 animate-slide-in-left px-4">
+            <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-3 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl hover:bg-white/15 transition-all duration-300 shadow-lg text-xs sm:text-sm">
+              <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-blue-300 flex-shrink-0" />
+              <span className="font-medium hidden sm:inline">mansourpouye36@gmail.com</span>
+              <span className="font-medium sm:hidden">Email</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-2xl hover:bg-white/15 transition-all duration-300 shadow-lg">
-              <Phone className="w-5 h-5 text-green-300" />
-              <span className="text-sm font-medium">+221 77 499 09 83</span>
+            <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-3 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl hover:bg-white/15 transition-all duration-300 shadow-lg text-xs sm:text-sm">
+              <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-green-300 flex-shrink-0" />
+              <span className="font-medium">+221 77 499 09 83</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-2xl hover:bg-white/15 transition-all duration-300 shadow-lg">
-              <MapPin className="w-5 h-5 text-red-300" />
-              <span className="text-sm font-medium">Keur Mbaye Fall, Sénégal</span>
+            <div className="flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-3 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl hover:bg-white/15 transition-all duration-300 shadow-lg text-xs sm:text-sm">
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-red-300 flex-shrink-0" />
+              <span className="font-medium hidden sm:inline">Keur Mbaye Fall, Sénégal</span>
+              <span className="font-medium sm:hidden">Sénégal</span>
             </div>
           </div>
 
           {/* Enhanced action buttons */}
-          <div className="flex flex-wrap justify-center gap-4 animate-slide-in-right">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 animate-slide-in-right px-4">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             >
-              <Download className="w-5 h-5 mr-2" />
+              <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Télécharger CV
             </Button>
             
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               asChild
             >
               <a href="https://github.com/mm2002-pn" target="_blank" rel="noopener noreferrer">
-                <Github className="w-5 h-5 mr-2" />
+                <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 GitHub
               </a>
             </Button>
@@ -82,42 +84,42 @@ const Header = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               asChild
             >
               <a href="https://linkedin.com/in/mansour-pouye-71834b243" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-5 h-5 mr-2" />
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 LinkedIn
               </a>
             </Button>
           </div>
 
           {/* Achievement stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 animate-fade-in">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl">
-              <div className="text-3xl font-bold text-blue-300 mb-2">2+</div>
-              <div className="text-sm text-blue-100">Années d'expérience</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-16 animate-fade-in px-4">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:scale-105 transition-transform duration-300">
+              <div className="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">2+</div>
+              <div className="text-xs sm:text-sm text-blue-100">Années d'expérience</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl">
-              <div className="text-3xl font-bold text-green-300 mb-2">15+</div>
-              <div className="text-sm text-blue-100">Projets réalisés</div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:scale-105 transition-transform duration-300">
+              <div className="text-2xl sm:text-3xl font-bold text-green-300 mb-2">15+</div>
+              <div className="text-xs sm:text-sm text-blue-100">Projets réalisés</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl">
-              <div className="text-3xl font-bold text-purple-300 mb-2">10+</div>
-              <div className="text-sm text-blue-100">Technologies maîtrisées</div>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:scale-105 transition-transform duration-300">
+              <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-2">10+</div>
+              <div className="text-xs sm:text-sm text-blue-100">Technologies maîtrisées</div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Enhanced scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-xs text-blue-200 font-medium">Défiler pour découvrir</span>
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center relative overflow-hidden">
-            <div className="w-1 h-3 bg-gradient-to-b from-blue-400 to-transparent rounded-full mt-2 animate-pulse"></div>
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="flex flex-col items-center gap-1 sm:gap-2">
+          <span className="text-xs text-blue-200 font-medium hidden sm:block">Défiler pour découvrir</span>
+          <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/30 rounded-full flex justify-center relative overflow-hidden">
+            <div className="w-1 h-2 sm:h-3 bg-gradient-to-b from-blue-400 to-transparent rounded-full mt-1 sm:mt-2 animate-pulse"></div>
           </div>
-          <ChevronDown className="w-4 h-4 text-white/60 animate-bounce" />
+          <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-white/60 animate-bounce" />
         </div>
       </div>
     </header>
