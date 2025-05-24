@@ -93,22 +93,6 @@ const Header = () => {
               </a>
             </Button>
           </div>
-
-          {/* Achievement stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-16 animate-fade-in px-4">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">2+</div>
-              <div className="text-xs sm:text-sm text-blue-100">Années d'expérience</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="text-2xl sm:text-3xl font-bold text-green-300 mb-2">15+</div>
-              <div className="text-xs sm:text-sm text-blue-100">Projets réalisés</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-xl hover:scale-105 transition-transform duration-300">
-              <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-2">10+</div>
-              <div className="text-xs sm:text-sm text-blue-100">Technologies maîtrisées</div>
-            </div>
-          </div>
         </div>
       </div>
 
